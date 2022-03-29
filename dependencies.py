@@ -52,7 +52,7 @@ def read_mot_valid(driver):
     mot_date = datetime.strptime(strs[len(strs) - 1].strip(), '%d %B %Y')
     return mot_date
 def rename_file(pdf_folder, new_name):
-    files = glob.glob(f'{pdf_folder}\\*') #change slashes when working on mac
+    files = glob.glob(f'{pdf_folder}\\*')
     latest_file = max(files, key = os.path.getctime) #find the most recent file by creation time
     if os.path.exists(new_name): os.remove(new_name) #remove old file with the same name
     os.rename(latest_file, new_name) # move to folder with the script with the desired name
