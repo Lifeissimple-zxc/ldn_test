@@ -14,7 +14,7 @@ import os
 #key vars
 base_url = 'https://www.gov.uk/check-mot-history'
 search_url = 'https://www.check-mot.service.gov.uk/'
-pdf_folder = r"C:\Users\Makario\Documents\ldf_test_pdfs" # enter folder to save pdfs here
+pdf_folder = r"" # enter folder to save pdfs here
 #function for test data
 def read_data(csv_path = ''):
     '''A function to read data into pandas dataframe.
